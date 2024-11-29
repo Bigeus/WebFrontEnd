@@ -1,0 +1,6 @@
+p {
+    position: fixed;
+    bottom: 0;
+
+    border: 1px solid rgb(181, 159, 36);
+}

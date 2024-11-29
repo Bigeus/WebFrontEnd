@@ -1,0 +1,26 @@
+<h2>Exemplos de diretiva NgIf</h2>
+
+<div *ngIf="mostraExemplo01" style="background-color: aqua;">
+    Exemplo 01
+</div>
+<p>
+    <button (click)="exemplo01()">Habilitar</button>
+</p>
+
+<h3>Exemplo 2</h3>
+<div style="background-color: blue;" *ngIf="mostraExemplo02; else meutemplate">
+    Exemplo 2
+    <button (click)="exemplo02()">Habilitar</button>
+</div>
+<ng-template #meutemplate>
+    <div style="background-color: red;">
+        Exemplo 2
+        <p>
+            <button (click)="exemplo02()">Habilitar</button>
+        </p>
+    </div>
+</ng-template>
+<h3>Exemplo 3</h3>
+<!-- <div style="background-color: green;" *ngIf="mostraExemplo03; then meutemplate1; else meutemplate2;"> -->
+    <!-- passou muito rapido nem entendi essa parte -->
+<!-- </div> -->
